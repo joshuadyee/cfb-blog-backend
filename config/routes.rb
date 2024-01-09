@@ -4,4 +4,10 @@ Rails.application.routes.draw do
   post "/posts" => "posts#create"
   patch "/posts/:id" => "posts#update"
   delete "/posts/:id" => "posts#destroy"
+
+  get "/tags" => "tags#index"
+  get "/tags/:id" => "tags#show"
+  post "/tags" => "tags#create"
+  patch "/tags/:id" => "tags#update"
+  delete "/tags/:id" => "tags#destroy"
 end
